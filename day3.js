@@ -36,7 +36,7 @@
 // 2.replacing substring 
 // let n = "I am student , I am developer";
 // replace()
-// let b = n.replace(/Am/ig,"was");  //i - insensitiven , g-global
+// let b = n.replace(/Am/ig,"was");  //i - insensitive , g-global  regex
 
 // console.log(b);
 // console.log(n);
