@@ -36,7 +36,11 @@
 // 2.replacing substring 
 // let n = "I am student , I am developer";
 // replace()
+<<<<<<< HEAD
 // let b = n.replace(/Am/ig,"was");  //i - insensitiven , g-global
+=======
+// let b = n.replace(/Am/ig,"was");  //i - insensitive , g-global  regex
+>>>>>>> 1ceb8e8ff3edc09a19305f2e12977b621605eff5
 
 // console.log(b);
 // console.log(n);
@@ -86,4 +90,8 @@ if(c.charCodeAt(i)>=48 && c.charCodeAt(i)<=57){
     count++;
 }
 }
+<<<<<<< HEAD
 console.log(count);
+=======
+console.log(count);
+>>>>>>> 1ceb8e8ff3edc09a19305f2e12977b621605eff5
