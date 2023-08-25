@@ -29,7 +29,7 @@ let arr= [26,"Pallavi", true,["Nagpur","Pune",45],a];
 // let n =arr.pop();
 // unshift()
 // arr.unshift("Bootcoding");
-
+//learn
 // shift()
 
 //  let n= arr.shift();
