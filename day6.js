@@ -42,6 +42,8 @@ let a = ["java","javascript"];
 
 //object
 
+//we can add the multiple types of values in object
+
 let obj = {
      "full name" : "Pallavi Sawalakhe",
     email:"pallavi@gmail.com",
