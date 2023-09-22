@@ -88,7 +88,7 @@ comments
 //     console.log( a+ " is greater");
 // }else if(b> a && b> c){
 //     console.log( b + "is greater");
-// }else{
+// }else {
 //     console.log(c + "is greater");
 // }
 
@@ -109,7 +109,7 @@ comments
 // 4. switch case
 
 
-// var op = "/";
+// var op = "?";
 // var a = 40 , b= 20 ;
 // switch(op){
 //     case "+":{
@@ -139,7 +139,7 @@ comments
 //     //code ;
 // }
 
-// for(var a = 1 ; a<=10 ; a++){
+// for(var a = 10 ; a>=1 ; a--){
 //     console.log(a);
 // }
 
@@ -162,22 +162,22 @@ comments
 //     console.log(a);
 // }
 
-for(var i = 1 ; i<=10 ;i++){
-    if(i==5){
-        continue;
-    }
-    console.log(i);
-}
+// for(var i = 1 ; i<=10 ;i++){
+//     if(i==5){
+//         continue;
+//     }
+//     console.log(i);
+// }
 
 // 2. while 
 // var i = 1 ;
 // while(i<=10){
+//     i++; 
 //     console.log(i);
-//     i++;
 // }
 
 // 3. do while
-// var a =11 ;
+// var a =111 ;
 // do{
 // console.log(a);
 // a++;

@@ -14,7 +14,7 @@
 // let isStudent =  true ;
 // console.log(typeof isStudent);
 // // 4.Underfined 
-// let isUndefined;
+let isUndefined ;
 // console.log(typeof isUndefined);
 // // 5.Null
 // let isNull= null ;
@@ -29,8 +29,9 @@
 // }
 // console.log(typeof isObject);
 // // 8.BigInt
-// let isBigInt = 49n;
-// console.log(typeof isBigInt);
+let isBigInt = 495556566666666666n;
+console.log(typeof isBigInt);
+console.log(isBigInt);
 
 // let a = "ten" ;
 // let b =10;

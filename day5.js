@@ -1,8 +1,8 @@
 // Array
 
-let a = {name:"Pallavi",city:"Nagpur"};
-
-let arr= [26,"Pallavi", true,["Nagpur","Pune",45],a];
+// let a = {name:"Pallavi",city:"Nagpur",numbers:["1","2","3","4","5","6","7"]};
+// console.log(a.name);
+let arr= [26,"Pallavi", true,["Nagpur","Pune",{name: "bootcoding"}],a];
 
 // console.log(arr);
 // console.log(typeof arr);
@@ -49,5 +49,5 @@ let arr= [26,"Pallavi", true,["Nagpur","Pune",45],a];
 
 // let arr=["a","c","q","e","td","h","z","f","a","a"];
 
-console.log(arr);
+// console.log(arr);
 // console.log(arr.sort());

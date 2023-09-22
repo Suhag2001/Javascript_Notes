@@ -12,12 +12,13 @@
 //   //  code   
 // }
 
-// let a={
-//     name: "Bootcodings",
-//     fun : function(){
-//         return this.name;
-//     }
-// }
+let a={
+    name: "Bootcodings",
+    fun : function(){
+        return this.name;
+    }
+}
+console.log(a.fun());
 
 //Use of anonymous function
 // 1. In Object  , Array
@@ -69,15 +70,15 @@
 // a = 222;
 // console.log(a);
 
-const fun =(a,b)=>{
-    return a+b;
-}
+// const fun =(a,b)=>{
+//     return a+b;
+// }
 
-console.log(fun(1,2));
-console.log(fun(55,2));
+// console.log(fun(1,2));
+// console.log(fun(55,2));
 
-fun =()=>{
-    console.log("Bootcoding");
-}
+// fun =()=>{
+//     console.log("Bootcoding");
+// }
 
-fun();
+// fun();

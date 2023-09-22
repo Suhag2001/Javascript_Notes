@@ -22,14 +22,15 @@ let n = "I am a Developer, I am a Student";
 // 7. String Template / Template Literals / Back-tick(``)
 
 // Quotes inside string 
-// let  a = `I'm a "Developer"`;
-// console.log(a);
+// let  developer = `I'm a "Developer"`;
+// console.log(developer);
 
 //multiline string 
 
 // let a = `I am a Developer
 //   I am a Student 
-//   I am learning js`;
+//   I am learning js
+// console.log(a)`;
 // console.log(a);    
 //Interpolation (${var})
 
@@ -40,6 +41,6 @@ let n = "I am a Developer, I am a Student";
 // let a = "aman  pallavi prachi";
 // console.log(a.split(" "));
 
-let a ="                  I am  a Developer         ";
-console.log(a);
-console.log(a.trim());
+// let a ="                  I am  a Developer         ";
+// console.log(a);
+// console.log(a.trim());

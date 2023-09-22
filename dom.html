@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol>
+        <li>getElementById</li>
+        <li>getElementByClassName</li>
+        <li>getElementByTagName</li>
+        <li>getquerySelector</li>
+        <li>gequerySelectorAll</li>
+    </ol>
+
+ 
+
+    <input type="text" name="" class="data" id="data2">
+
+    <button onclick="submit()">submit</button>
+
+    <div id="data"></div>
+    <div id="data3"></div>
+      
+    <h1>DOM</h1>
+
+    <script>
+    
+    function submit() {
+        var data = document.getElementById("data2").value;
+        console.log(data);
+        document.getElementById("data").innerHTML = "<b>user data:  " +data;
+        document.getElementById("data3").textContent ="<b>user data: "+data;
+
+    }
+
+
+    document.write("bootcoding  test")
+
+    </script>
+</body>
+</html>
