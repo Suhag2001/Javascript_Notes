@@ -3,83 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form Example</title>
     <style>
         input {
             margin-bottom: 10px;
         }
+
         #content {
             display: flex;
             justify-content: center;
-            /* border: 1px solid black; */
             width: 50%;
             padding-bottom: 10px;
             margin-left: 25%;
+            background-color: antiquewhite;
         }
+
         form {
             margin-bottom: 20px;
         }
-        #showData {
+
+        #showData{
             display: flex;
             justify-content: center;
-            /* border: 1px solid black; */
+            flex-direction: column;
             width: 50%;
             padding-bottom: 10px;
             margin-left: 25%;
+            background-color: antiquewhite;
         }
-        #showData p{
-            margin-bottom: 20px;
+        #showRow{
+            margin-left: 50px;
         }
+      
     </style>
 </head>
 <body>
-    
+
 <div id="content">
-    <form action="" id="form" onsubmit="submitForm(event)">
-        <label for="fname">First Name </label>
+    <form id="form">
+        <label for="fname">First Name:</label>
         <input type="text" id="fname">
         <br>
-        <label for="lname">Last Name</label>
+        <label for="lname">Last Name:</label>
         <input type="text" id="lname">
         <br>
-        <label>Gender</label>
-        <input type="radio" id="male" value="Male" name="gender">Male 
-        <input type="radio" id="female" value="Female" name="gender">Female 
+        <label>Gender:</label>
+        <input type="radio" id="male" value="Male" name="gender">Male
+        <input type="radio" id="female" value="Female" name="gender">Female
         <br>
-        <label >City</label>
+        <label>City:</label>
         <select id="city">
-            <option selected>Select City</option>
+            <option value="Select City">Select City</option>
             <option value="Nagpur">Nagpur</option>
             <option value="Pune">Pune</option>
             <option value="Delhi">Delhi</option>
         </select>
         <br><br>
-        <input type="submit" id="submit">
+        <input type="submit" value="Submit">
     </form>
 </div>
 <div id="showData">
-    <div id="showName"></div>
+ <div id="showrow">
+    <div id="showName" class="show"> suhag </div>
     <br><br>
-    <div id="showGender"></div>
+    <div id="showGender" class="show">male</div>
     <br><br>
-    <div id="showCIty"></div>
+    <div id="showCity" class="show">nagpur</div>
+</div>
 </div>
 
 <script>
-   function submitForm(event) {
-       event.preventDefault(); // Prevent the default form submission
 
-       const fname = document.getElementById("fname").value;
-       const lname = document.getElementById("lname").value; 
-       const city = document.getElementById("city").value; 
-       
-       // Use the name attribute to get the selected radio button
-       const gender = document.querySelector('input[name="gender"]:checked').value;
+    let form = document.getElementById("form");
+    form.addEventListener("submit", function(event){
+        event.preventDefault(); // Prevent the default form submission
 
-       document.querySelector("#showName").innerHTML = "Full Name: " + fname + " " + lname;
-       document.querySelector("#showGender").innerHTML = "Gender: " + gender;
-       document.querySelector("#showCity").innerHTML = "City: " + city;
-   }
+        const fname = document.getElementById("fname").value;
+        const lname = document.getElementById("lname").value;
+        const city = document.getElementById("city").value;
+
+        // Use the name attribute to get the selected radio button
+        const gender = document.querySelector('input[name="gender"]:checked');
+
+        document.querySelector("#showName").textContent = "Full Name: " + fname + " " + lname;
+        document.querySelector("#showGender").textContent = "Gender: " + (gender ? gender.value : "Not specified");
+        document.querySelector("#showCity").textContent = "City: " + city;
+    })
 </script>
 
 </body>

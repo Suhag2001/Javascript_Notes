@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+
+    <form id="form">
+        <label for="fname">First Name:</label>
+        <input type="text" name="fname"  id="fname">
+        <br><br>
+        <label for="lname">Last Name:</label>
+        <input type="text"name="lname" id="lname">
+        <br><br>
+        <label for="pass">password:</label>
+        <input type="password" name="pass" id="pass">
+        <br><br>
+        <label for="Gender">Gender:</label>
+        <input type="radio" id="male" value="Male" name="gender">Male
+        <input type="radio" id="female" value="Female" name="gender">Female 
+        <br><br>
+        <!-- <label>City:</label>
+        <select id="city">
+            <option value="Select City">Select City</option>
+            <option value="Nagpur">Nagpur</option>
+            <option value="Pune">Pune</option>
+            <option value="Delhi">Delhi</option>
+        </select>
+        <br><br>
+        <input type="date">
+        <br><br> -->
+        <input type="submit"  id="submit">  
+    </form>
+
+    <div class="content">
+        <div id="firstName">First Name : </div>
+        <div>Last Name :</div>
+        <div>Password :</div>
+        <div>Gender : </div>
+
+    </div>
+
+    <script>
+
+        let form = document.getElementById("form");
+       
+        form.addEventListener("submit", function(event){
+            
+            event.preventDefault();// prevent the loading event
+            
+            let lname = document.getElementById("lname").value;
+            let pass = document.getElementById("pass").value;
+            let gender = document.querySelector('input[name="gender"]:checked').value;
+            // let city = document.getElementById("city").value;
+            // let date = document.getElementById("date");
+
+            // console.log(date);
+            // console.log(city);
+            console.log(gender);
+            console.log(pass);
+            console.log(fname);
+            console.log(lname);
+
+            document.getElementById("firstname").innerHTML ="First Name: " + fname.value
+        })
+
+
+
+    </script>
+    
+</body>
+</html>

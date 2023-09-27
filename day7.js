@@ -2,23 +2,31 @@
 
 // 1.Named function
 
-// function Add(a , b){
-// return  a+b;
-// }
+function Add(a , b){
+console.log(a+b);
+}
+// Add(10,20);
+// Add(30,20);
 
-// console.log(Add(3,5));
+
 // 2.Annonymous function
 // function (parametrs){
 //   //  code   
 // }
 
-let a={
-    name: "Bootcodings",
-    fun : function(){
-        return this.name;
-    }
-}
-console.log(a.fun());
+
+// let obj={
+//     name: "Bootcodings",
+//     number : 45666545656,
+//     fun : function(a,b){
+//        return a*b;
+//     },
+//     fun2: function(a,b){
+//         return a-b;
+//     }
+// }
+// console.log(obj.name);
+// console.log(obj.fun(30,2));
 
 //Use of anonymous function
 // 1. In Object  , Array
@@ -40,6 +48,7 @@ console.log(a.fun());
 //     return a+b;
 // }
 
+// console.log(add(40,20));
 
 //Difference between let , var, and const
 
