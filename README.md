@@ -1,4 +1,4 @@
-# JavaScript Classes and DOM Manipulation
+# JavaScript and DOM Manipulation
 
 ## Introduction
 
